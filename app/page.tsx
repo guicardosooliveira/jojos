@@ -1,7 +1,9 @@
-import Image from 'next/image'
+import { Jogos } from '@/components/jogos/Jogos'
 
 export default function Home() {
   return (
-    <main>Hello World!</main>
+    <main>
+      <Jogos />
+    </main>
   )
 }

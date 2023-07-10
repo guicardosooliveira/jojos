@@ -1,0 +1,23 @@
+.container-jogos {
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-principal {
+    max-width: 1240px;
+}
+
+.container-secundario {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagem-jogos:hover {
+    border: 5px var(--secondary-bg-color) solid;
+    cursor: pointer;
+}

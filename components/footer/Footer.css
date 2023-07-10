@@ -1,0 +1,12 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px var(--gray) solid;
+}
+
+.footer-text {
+    color: var(--white);
+    font-size: 16px;
+    padding: 40px 0;
+}
