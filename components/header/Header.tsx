@@ -1,16 +1,19 @@
 import './Header.css'
 import { Logo } from "../logo/Logo";
 import { Button } from '../button/Button';
+import Link from 'next/link';
 
 export function Header () {
     return (
         <header className="header-div">
             <Logo />
             <nav className='nav-header'>
-                <a href="">Jogos</a>
-                <a href="">Sobre</a>
-                <a href="">Blog</a>
-                <Button>Carreira</Button>
+                <Link href="/">Jogos</Link>
+                <Link href="#sobre">Sobre</Link>
+                <Link href="">Blog</Link>
+                <Link href='#carreira'>
+                    <Button>Carreira</Button>
+                </Link>
             </nav>
         </header>
     )

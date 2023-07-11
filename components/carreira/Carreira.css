@@ -1,0 +1,22 @@
+.container-principal-carreira{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 135px;
+    margin-bottom: 115px;
+}
+
+.titulo-carreira{
+    font-family: var(--secondary-font);
+    color: var(--secondary-bg-color);
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.container-carreira{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}

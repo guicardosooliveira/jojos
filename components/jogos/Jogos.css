@@ -7,8 +7,8 @@
     align-items: center;
 }
 
-.container-principal {
-    max-width: 1240px;
+.container-imagem-principal {
+    width: 1240px;
 }
 
 .container-secundario {

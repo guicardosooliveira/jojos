@@ -1,0 +1,29 @@
+.container-principal-sobre {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo-sobre {
+    color: var(--secondary-bg-color);
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.container-secundario-sobre{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.texto-sobre{
+    width: 50%;
+    color: var(--white);
+    line-height: 32px;
+    font-size: 20px;
+}

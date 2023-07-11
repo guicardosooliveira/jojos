@@ -7,8 +7,8 @@ import spaceInvaders from '../../public/assets/images/spaceInvaders.svg'
 
 export function Jogos () {
     return (
-        <section className='container-jogos'>
-            <div className='container-principal'>
+        <section className='container-jogos' id='jogos'>
+            <div className='container-imagem-principal'>
                 <Image src={pacman} alt='Imagem jogo Pacman' className='imagem-jogos'/>
             </div>
             <div className='container-secundario'>
