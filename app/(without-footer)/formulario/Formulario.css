@@ -1,0 +1,58 @@
+.secao-formulario{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-formulario{
+    font-family: var(--secondary-font);
+    color: var(--secondary-bg-color);
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 125px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo p {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 3px;
+    color: var(--white);
+}
+
+.label {
+    color: var(--white);
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.input{
+    color: var(--gray);
+    font-size: 20px;
+    border: 1px solid var(--white);
+    width: 600px;
+    padding: 20px 10px;
+}
+
+.input:focus{
+    outline: none;
+    border-color: var(--secondary-bg-color);
+}
+
+.input-texto-motivo {
+    height: 142px;
+}

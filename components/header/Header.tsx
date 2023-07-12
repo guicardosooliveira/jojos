@@ -11,7 +11,7 @@ export function Header () {
                 <Link href="/">Jogos</Link>
                 <Link href="#sobre">Sobre</Link>
                 <Link href="">Blog</Link>
-                <Link href='#carreira'>
+                <Link href='#carreiras'>
                     <Button>Carreira</Button>
                 </Link>
             </nav>
