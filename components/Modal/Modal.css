@@ -1,0 +1,29 @@
+.div-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 800px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 44px 58px;
+    background-color: var(--gray);
+}
+
+.texto-modal{
+    background-color: var(--gray);
+    font-family: var(--secondary-font);
+    color: var(--main-bg-color);
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.imagem-modal{
+    background-color: var(--gray);
+    width: 200px;
+}

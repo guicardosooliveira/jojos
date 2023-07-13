@@ -5,6 +5,8 @@ import './Formulario.css'
 import * as Yup from "yup"
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { Modal } from '@/components/Modal/page';
+import { useEffect, useState } from 'react';
 
 
 const schemaForm = Yup.object().shape({
@@ -16,17 +18,45 @@ const schemaForm = Yup.object().shape({
 
 export default function Formulario() {
 
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
+    function handleModal () {
+        setModalIsOpen((prev) => !prev)
+    }
+
     const {
         register,
         handleSubmit,
-        formState: { errors, isSubmitting },
+        reset,
+        formState,
+        formState: { errors, isSubmitSuccessful },
       } = useForm({
+        defaultValues: {
+            nome: '',
+            email: '',
+            portfolio: '',
+            motivo: ''
+        },
         mode: "onSubmit",
         resolver: yupResolver(schemaForm),
       });
+    
+    useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+            reset({
+                nome: '',
+                email: '',
+                portfolio: '',
+                motivo: ''
+            })
+        }
+    }, [isSubmitSuccessful, formState])
 
     const handleSubmitForm = () => {
-        console.log("formulario enviado")
+        handleModal();
+        setTimeout(() => {
+            handleModal();
+        }, 5000);
     }
 
     return (
@@ -63,6 +93,9 @@ export default function Formulario() {
                 </div>
                 <Button>Enviar Formulário</Button>
             </form>
+            <div>
+                <Modal isOpen={modalIsOpen}/>
+            </div>
         </section>
     )
 }
