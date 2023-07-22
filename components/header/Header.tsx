@@ -9,9 +9,9 @@ export function Header () {
             <Logo />
             <nav className='nav-header'>
                 <Link href="/">Jogos</Link>
-                <Link href="#sobre">Sobre</Link>
-                <Link href="">Blog</Link>
-                <Link href='#carreiras'>
+                <Link href="/#sobre">Sobre</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href='/#carreiras'>
                     <Button>Carreira</Button>
                 </Link>
             </nav>

@@ -2,7 +2,8 @@
 import { client, urlFor } from '@/app/(lib)/sanity.api'
 import './Blog.css'
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
+import { BlogPost } from '@/components/blogPost/page'
+import { PostPrincipal } from '@/components/postPrincipal/page'
 
 
 async function getPosts () {
@@ -30,19 +31,28 @@ export default function Blog () {
     useEffect(() => {
         async function fetchData() {
             const data: Post[] = await getPosts();
-            console.log(data[0].body[0].children[0].text)
-            setPosts(data)
+            setPosts(data.reverse())
+            console.log(posts[0].body)
         }
         fetchData()
     }, [])
     
 
     return (
-        <section>
-            <h1>Blog</h1>
-            <ul>
+        <section className='pagina-blog'>
+            <h1 className='titulo-pagina-blog'>Blog</h1>
+            <PostPrincipal  
+            imagem=''
+            autor='gui'
+            data='{posts[0].publishedAt}'
+            descricao='descricao'
+            titulo='titulo'
+             />
+            <ul className='lista-posts'>
                 {posts.map((post) => {
-                    return <li key={post._id}><Image width={350} height={350} src={urlFor(post.mainImage).url()!} alt='Imagem' /></li>
+                    return (
+                        <BlogPost imagem={urlFor(post.mainImage).url()!} titulo={post.title} id={post._id}/>
+                    )
                 })}
             </ul>
         </section>

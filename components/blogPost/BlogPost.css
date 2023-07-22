@@ -1,0 +1,19 @@
+.container-post{
+    width: 390px;
+}
+
+.container-post:hover{
+    cursor: pointer;
+}
+
+.imagem-post {
+    margin-bottom: 12px;
+}
+
+.titulo-post{
+    height: 101px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--gray);
+}

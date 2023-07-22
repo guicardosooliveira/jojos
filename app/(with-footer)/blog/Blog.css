@@ -1,0 +1,21 @@
+.pagina-blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 100px 115px 100px;
+}
+
+.titulo-pagina-blog {
+    font-family: var(--secondary-font);
+    color: var(--secondary-bg-color);
+    font-size: 40px;
+    line-height: 55px;
+    margin: 20px 0;
+}
+
+.lista-posts{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}

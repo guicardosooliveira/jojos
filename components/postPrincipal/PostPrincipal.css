@@ -1,0 +1,25 @@
+.container-post-principal{
+    display: flex;
+    margin: 0 100px 35px 100px;
+    width: 1240px;
+    height: 340px;
+}
+
+.container-texto-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-post-principal{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--gray);
+}
+
+.autor-post-principal{
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--gray);
+}
