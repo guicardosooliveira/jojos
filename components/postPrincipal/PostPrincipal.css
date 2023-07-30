@@ -1,13 +1,14 @@
 .container-post-principal{
     display: flex;
+    justify-content: space-between;
     margin: 0 100px 35px 100px;
-    width: 1240px;
-    height: 340px;
+    gap: 20px;
 }
 
 .container-texto-principal{
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
 .titulo-post-principal{
@@ -18,8 +19,22 @@
 }
 
 .autor-post-principal{
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: normal;
     font-weight: 400;
+    color: var(--gray);
+}
+
+.descricao-post-principal{
+    width: 600px;
+    max-height: 128px;
+    display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    line-height: 32px;
     color: var(--gray);
 }
