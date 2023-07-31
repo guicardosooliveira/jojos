@@ -1,0 +1,44 @@
+.secao-jogo{
+    display: flex;
+    margin: 0 0 115px 115px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.jogo-titulo{
+    width: 1240px;
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--secondary-bg-color);
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 15px;
+}
+
+
+.jogo-descricao{
+    display: flex;
+    align-items: center;
+    width: 385px;
+    gap: 15px;
+}
+
+.jogo-valor{
+    color: var(--white);
+    font-size: 20px;
+    line-height: 32px;
+    width: 70%;
+}
+
+.secao-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.jogo-texto{
+    color: var(--white);
+    width: 1240px;
+    font-size: 20px;
+    line-height: 32px;
+}
