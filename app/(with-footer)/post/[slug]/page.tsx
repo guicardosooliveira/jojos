@@ -27,7 +27,7 @@ export default async function Post({ params }: any) {
     )
 }
 
-export async function generateStaticParams(slug: string) {
+export async function generateStaticParams(slug: any) {
     const query = `*[_type == "post" && slug.current == "${slug}"]{_id, title, author, mainImage, slug, body, publishedAt}`
     const data = await client.fetch(query)
     return data
