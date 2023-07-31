@@ -15,6 +15,9 @@
     margin-bottom: 15px;
 }
 
+.jogo-imagem{
+    object-fit: cover;
+}
 
 .jogo-descricao{
     display: flex;
